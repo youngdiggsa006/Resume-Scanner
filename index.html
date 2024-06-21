@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Scanner</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <textarea name="job_desc_text" id="job_desc_text" rows="10" placeholder="Paste Job Description here" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="file" name="resume" id="resume" accept=".docx" required>
+                <label for="resume" class="custom-file-upload">Select Resume</label>
+                <span id="resume-file-name" class="file-name">No file selected</span>
+            </div>
+            <button type="submit">Calculate Match</button>
+        </form>
+        {% if result %}
+            <p class="result">{{ result }}</p>
+        {% endif %}
+    </div>
+    <script>
+        document.getElementById('resume').addEventListener('change', function() {
+            document.getElementById('resume-file-name').textContent = this.files[0].name;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #393e46;
+    border-radius: 10px;
+    background-color: #2e2e2e;
+}
+
+h1 {
+    color: #00adb5;
+}
+
+.form-group {
+    margin: 20px 0;
+    position: relative;
+}
+
+input[type="file"] {
+    display: none; /* Hide the default file input button */
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00adb5;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-out, border-radius 0.3s ease-out;
+}
+
+.custom-file-upload:hover {
+    background: #656b73;
+    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    border-radius: 1px;
+}
+
+.file-name {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #888888;
+}
+
+button {
+    padding: 10px 20px;
+    background: #00adb5;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-out, border-radius 0.3s ease-out;
+}
+
+button:hover {
+    background: #656b73;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    border-radius: 1px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00adb5;
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+    height: 350px;
+    padding: 10px;
+    border: 4px solid #393e46;
+    border-radius: 10px;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Custom scrollbar for WebKit browsers (Chrome, Safari) */
+textarea::-webkit-scrollbar{
+    width: 10px;
+}
+
+textarea::-webkit-scrollbar-track{
+     background: rgb(202, 202, 202);
+     border-radius: 16px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background: #2e2e2e;
+    border-radius: 16px;
+    border: 0.5px solid rgb(202, 202, 202);
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #4d5154; 
+    cursor: pointer;
+}
+
+/* Custom scrollbar styles for Edge */
+textarea::-ms-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+textarea::-ms-scrollbar-track {
+    background: rgb(202, 202, 202); /* Background of the scrollbar track */
+    border-radius: 16px; /* Rounded corners for the track */
+}
+
+textarea::-ms-scrollbar-thumb {
+    background: #2e2e2e; /* Color of the scrollbar thumb */
+    border-radius: 16px; /* Rounded corners for the thumb */
+    border:  0.5px solid rgb(202, 202, 202); /* Adds space around the thumb */
+}
+
+textarea::-ms-scrollbar-thumb:hover {
+    background: #4d5154; /* Color of the scrollbar thumb on hover */
+    cursor: pointer;
+}
