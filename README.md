@@ -14,9 +14,9 @@ Before setting up the application, ensure you have the following installed:
 **Step 3: Create a Virtual Environment**
 ```python -m venv venv```
 * Activate the virtual environment
-* On Windows
+- On Windows
 * ```venv\Scripts\activate```
-* On macOS/Linux
+- On macOS/Linux
 * ```source venv/bin/activate```
 
 **Step 4: Install Dependencies**
