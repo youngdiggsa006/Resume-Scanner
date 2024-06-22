@@ -12,10 +12,10 @@ Before setting up the application, ensure you have the following installed:
    * ```cd path/to/extracted/folder```
 
 **Step 3: Create a Virtual Environment**
-```python -m venv venv```
+* ```python -m venv venv```
 * Activate the virtual environment
-- On Windows ```venv\Scripts\activate```
-- On macOS/Linux ```source venv/bin/activate```
+  - On Windows ```venv\Scripts\activate```
+  - On macOS/Linux ```source venv/bin/activate```
 
 **Step 4: Install Dependencies**
 * Install the required Python packages using 'pip':
