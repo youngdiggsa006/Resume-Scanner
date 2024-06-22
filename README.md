@@ -1,9 +1,13 @@
+Overview
+--
+This project is a web application built with Flask that allows users to upload their resume and input a job description to see how well their resume matches the job description. The application uses the '**doc2txt'** library to extract text from DOCX files and the '**sklearn'** library to calculate the similarity between the resume and the job description using cosine similarity.
+
 Installation Guide
 --
 **Step 1: Prerequisites**
-Before setting up the application, ensure you have the following installed:
-* Python (version 3.6 or later)
-* Pip (Python package installer)
+* Before setting up the application, ensure you have the following installed:
+  * Python (version 3.6 or later)
+  * Pip (Python package installer)
 
 **Step 2: Clown or Download the Project**
 1. Clone the repository
@@ -22,4 +26,4 @@ Before setting up the application, ensure you have the following installed:
 * Run ```pip install Flask docx2txt scikit-learn```
 
 **Step 5: Set up the Uploads Directory**
-```mkdir uploads```
+* ```mkdir uploads```
