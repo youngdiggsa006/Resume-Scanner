@@ -18,10 +18,9 @@ Before setting up the application, ensure you have the following installed:
 - On macOS/Linux ```source venv/bin/activate```
 
 **Step 4: Install Dependencies**
-Install the required Python packages using 'pip':
+* Install the required Python packages using 'pip':
 * ```pip install -r requirements.txt```
-* Run
-* ```pip install Flask docx2txt scikit-learn```
+* Run ```pip install Flask docx2txt scikit-learn```
 
 **Step 5: Set up the Uploads Directory**
 ```mkdir uploads```
